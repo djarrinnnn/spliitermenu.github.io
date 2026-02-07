@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wdth,wght@0,75..125,200..900&display=swap");
+
+body {
+	margin: 0;
+	display: grid;
+	min-height: 100vh;
+	place-items: center;
+	background-image: url("https://images.wallpapersden.com/image/download/topography-abstract-black-texture_a2lmZmiUmZqaraWkpJRnbW1lrWZtZWU.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+nav {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+}
+
+a {
+	color: #f4f4ed;
+	display: flex;
+	font-family: "Mona Sans", sans-serif;
+	font-size: 8rem;
+	font-variation-settings: "wdth" 77;
+	font-weight: 900;
+	line-height: 0.8;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 0 1em 0 red;
+	transition: text-shadow 300ms ease, color 300ms ease;
+}
+
+a:hover {
+    color: red;
+	text-shadow: 0 1em 0 red; 
+}
+
+a span {
+	display: inline-block;
+	transition: transform 250ms cubic-bezier(0.2, 0, 0.5, 1), color 300ms ease;
+	transform: translateY(0);
+}
+
+a:hover span {
+	transform: translateY(-1em);
+    color: red;
+}
