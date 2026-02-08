@@ -181,3 +181,70 @@ a.selected::after {
 .menu-image.lift-down {
 	--base-y: 90px;
 }
+/* ---------------- MOBILE LAYOUT ---------------- */
+
+@media (max-width: 768px) {
+
+	/* Body becomes vertical layout */
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding-top: 120px;
+	}
+
+	/* Name top center */
+	.name-brand {
+		position: relative;
+		top: 0;
+		left: 0;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.first-name {
+		font-size: 1.8rem;
+		letter-spacing: 0.3em;
+	}
+
+	.last-name {
+		font-size: 3rem;
+	}
+
+	/* Image stack becomes centered row */
+	.image-stack {
+		position: relative;
+		left: 0;
+		top: 0;
+		transform: none;
+		margin-bottom: 50px;
+		justify-content: center;
+	}
+
+	.menu-image {
+		width: 140px;
+		margin-left: -40px;
+	}
+
+	/* Reduce zig-zag intensity */
+	.menu-image:nth-child(odd) {
+		--base-y: -20px;
+	}
+
+	.menu-image:nth-child(even) {
+		--base-y: 20px;
+	}
+
+	/* Nav centered */
+	nav {
+		margin-left: 0;
+		align-items: center;
+	}
+
+	a {
+		font-size: 2.5rem;
+	}
+}
+
